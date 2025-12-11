@@ -252,7 +252,8 @@ const HeroSection = () => {
               <ExternalLink size={16} className="relative z-10 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300" />
             </a>
             <a 
-              href="#" 
+              href="/resume.pdf"
+              download="Kalaivani_M_Resume.pdf"
               className="group w-full sm:w-auto px-8 py-3.5 glass-card transition-all duration-300 rounded-xl font-semibold flex items-center justify-center gap-2 hover:scale-105 border border-border/50 hover:border-primary/50"
               style={{
                 boxShadow: '0 0 20px hsl(var(--background) / 0.5)',

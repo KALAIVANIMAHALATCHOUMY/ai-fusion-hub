@@ -145,25 +145,24 @@ const ContactSection = () => {
                     <p className="text-sm text-muted-foreground">Get my full CV in PDF</p>
                   </div>
                 </div>
-                <button className="w-full px-6 py-3 glass-card hover:bg-muted/50 rounded-xl font-semibold transition-all flex items-center justify-center gap-2">
+                <a 
+                  href="/resume.pdf"
+                  download="Kalaivani_M_Resume.pdf"
+                  className="w-full px-6 py-3 glass-card hover:bg-muted/50 rounded-xl font-semibold transition-all flex items-center justify-center gap-2"
+                >
                   <Download className="w-4 h-4" />
                   Download PDF
-                </button>
+                </a>
               </AnimatedCard>
 
-              {/* QR Code Placeholder */}
+              {/* LinkedIn QR Code */}
               <AnimatedCard index={3} className="glass-card rounded-2xl p-6 text-center">
-                <div className="w-32 h-32 mx-auto bg-foreground/5 rounded-xl flex items-center justify-center mb-4">
-                  <div className="grid grid-cols-4 gap-1">
-                    {[...Array(16)].map((_, i) => (
-                      <div
-                        key={i}
-                        className={`w-4 h-4 rounded-sm ${
-                          Math.random() > 0.5 ? 'bg-foreground' : 'bg-transparent'
-                        }`}
-                      />
-                    ))}
-                  </div>
+                <div className="w-32 h-32 mx-auto rounded-xl overflow-hidden mb-4">
+                  <img 
+                    src="/linkedin-qr.png" 
+                    alt="LinkedIn QR Code" 
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <p className="text-sm text-muted-foreground">Scan to connect on LinkedIn</p>
               </AnimatedCard>

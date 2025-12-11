@@ -54,7 +54,8 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="#"
+            href="/resume.pdf"
+            download="Kalaivani_M_Resume.pdf"
             className="btn-neon flex items-center gap-2 text-sm px-6 py-2 hover:scale-105 active:scale-95 transition-transform duration-200"
           >
             <Download size={16} className="group-hover:animate-bounce" />
@@ -102,7 +103,8 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="#"
+              href="/resume.pdf"
+              download="Kalaivani_M_Resume.pdf"
               className={`btn-neon flex items-center justify-center gap-2 mt-4 hover:scale-105 active:scale-95 transition-all duration-300 ${
                 isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
               }`}
