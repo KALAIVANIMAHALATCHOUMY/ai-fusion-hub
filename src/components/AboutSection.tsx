@@ -78,15 +78,15 @@ const AboutSection = () => {
                     <MapPin className="w-5 h-5 text-primary" />
                     <span className="text-sm">Puducherry, India</span>
                   </div>
-                  <div className="flex items-center gap-3 text-muted-foreground">
+                  <a href="mailto:kalaivanikalai0308@gmail.com" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
                     <Mail className="w-5 h-5 text-primary" />
-                    <span className="text-sm truncate">kalaivanimagudeswaran23@gmail.com</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-muted-foreground">
+                    <span className="text-sm truncate">kalaivanikalai0308@gmail.com</span>
+                  </a>
+                  <a href="https://wa.me/918778012859" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
                     <Phone className="w-5 h-5 text-primary" />
-                    <span className="text-sm">+91 9488293674</span>
-                  </div>
-                  <a href="#" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
+                    <span className="text-sm">+91 8778012859</span>
+                  </a>
+                  <a href="https://www.linkedin.com/in/kalaivani-mahalatchoumy" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="w-5 h-5 text-primary" />
                     <span className="text-sm">LinkedIn Profile</span>
                   </a>

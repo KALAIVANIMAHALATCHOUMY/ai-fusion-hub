@@ -1,4 +1,4 @@
-import { Video, Receipt, HeartPulse, ArrowRight } from 'lucide-react';
+import { Video, Receipt, HeartPulse, ArrowRight, Github } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 interface Project {
@@ -12,6 +12,7 @@ interface Project {
   impact: string;
   techStack: string[];
   color: string;
+  githubUrl: string;
 }
 
 const projects: Project[] = [
@@ -26,6 +27,7 @@ const projects: Project[] = [
     impact: 'Reduced manual processing time significantly with automated highlight extraction and searchable video content.',
     techStack: ['GenAI', 'Flask', 'Python', 'YOLOv8', 'Streamlit', 'MongoDB', 'RAG', 'LLMs'],
     color: 'primary',
+    githubUrl: 'https://github.com/KALAIVANIMAHALATCHOUMY/Unlocking-the-Power-of-LLMs',
   },
   {
     id: 2,
@@ -38,6 +40,7 @@ const projects: Project[] = [
     impact: 'Won the Agentic AI Hackathon (Google Cloud x Hack2Skill). Designed for both consumer and business utility.',
     techStack: ['GenAI', 'Firebase', 'Google ADK', 'LangChain', 'Cloud Integration', 'Agentic AI'],
     color: 'secondary',
+    githubUrl: 'https://github.com/KALAIVANIMAHALATCHOUMY/Google-Wallet-Receipt-Management',
   },
   {
     id: 3,
@@ -50,6 +53,7 @@ const projects: Project[] = [
     impact: 'Created a working prototype demonstrating low-cost healthcare monitoring for underserved communities.',
     techStack: ['Arduino UNO', 'IoT', 'C++', 'Serial Communication', 'Sensors'],
     color: 'accent',
+    githubUrl: 'https://github.com/KALAIVANIMAHALATCHOUMY/Patient-Health-Monitoring-System',
   },
 ];
 
@@ -91,6 +95,17 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
               <p className={`text-${project.color} font-medium`}>{project.subtitle}</p>
             </div>
           </div>
+          <a 
+            href={project.githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`p-3 glass-card hover:bg-muted/50 rounded-xl transition-all duration-500 hover:scale-110 ${
+              isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4'
+            }`}
+            style={{ transitionDelay: `${index * 200 + 300}ms` }}
+          >
+            <Github className="w-5 h-5" />
+          </a>
         </div>
 
         {/* Description */}
@@ -176,7 +191,12 @@ const ProjectsSection = () => {
 
           {/* CTA */}
           <div className="text-center mt-12">
-            <a href="#" className="inline-flex items-center gap-2 text-primary hover:gap-4 transition-all font-medium">
+            <a 
+              href="https://github.com/KALAIVANIMAHALATCHOUMY" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center gap-2 text-primary hover:gap-4 transition-all font-medium"
+            >
               View All Projects on GitHub
               <ArrowRight className="w-5 h-5" />
             </a>
