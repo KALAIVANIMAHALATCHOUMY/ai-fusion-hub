@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin, Github, MapPin, Send, Download, Calendar } from 'lucide-react';
+import { Mail, Phone, Linkedin, Github, MapPin, Send, Download, Calendar, MessageCircle } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 interface AnimatedCardProps {
@@ -29,9 +29,9 @@ const ContactSection = () => {
   const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation({ threshold: 0.3 });
 
   const socialLinks = [
-    { icon: Linkedin, label: 'LinkedIn', href: '#', color: 'hover:text-blue-500' },
-    { icon: Github, label: 'GitHub', href: '#', color: 'hover:text-foreground' },
-    { icon: Mail, label: 'Email', href: 'mailto:kalaivanimagudeswaran23@gmail.com', color: 'hover:text-red-500' },
+    { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/kalaivani-mahalatchoumy', color: 'hover:text-blue-500' },
+    { icon: Github, label: 'GitHub', href: 'https://github.com/KALAIVANIMAHALATCHOUMY', color: 'hover:text-foreground' },
+    { icon: MessageCircle, label: 'WhatsApp', href: 'https://wa.me/918778012859', color: 'hover:text-green-500' },
   ];
 
   return (
@@ -65,8 +65,10 @@ const ContactSection = () => {
               
               <div className="space-y-6 mb-10">
                 <a
-                  href="mailto:kalaivanimagudeswaran23@gmail.com"
+                  href="mailto:kalaivanikalai0308@gmail.com"
                   className="flex items-center gap-4 group"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <Mail className="w-5 h-5 text-primary" />
@@ -74,19 +76,19 @@ const ContactSection = () => {
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
                     <p className="font-medium group-hover:text-primary transition-colors">
-                      kalaivanimagudeswaran23@gmail.com
+                      kalaivanikalai0308@gmail.com
                     </p>
                   </div>
                 </a>
 
-                <a href="tel:+919488293674" className="flex items-center gap-4 group">
+                <a href="https://wa.me/918778012859" className="flex items-center gap-4 group" target="_blank" rel="noopener noreferrer">
                   <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
                     <Phone className="w-5 h-5 text-secondary" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Phone</p>
                     <p className="font-medium group-hover:text-secondary transition-colors">
-                      +91 9488293674
+                      +91 8778012859
                     </p>
                   </div>
                 </a>
@@ -129,10 +131,15 @@ const ContactSection = () => {
                     <p className="text-sm text-muted-foreground">Let's discuss your project</p>
                   </div>
                 </div>
-                <button className="w-full btn-neon flex items-center justify-center gap-2">
+                <a 
+                  href="https://wa.me/918778012859?text=Hi%20Kalaivani,%20I%20would%20like%20to%20schedule%20a%20call%20to%20discuss%20opportunities."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full btn-neon flex items-center justify-center gap-2"
+                >
                   <Send className="w-4 h-4" />
                   Request Interview / Demo
-                </button>
+                </a>
               </AnimatedCard>
 
               <AnimatedCard index={2} className="glass-card-hover rounded-2xl p-8">
