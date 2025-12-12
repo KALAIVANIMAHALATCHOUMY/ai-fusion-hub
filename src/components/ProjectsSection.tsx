@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Video, Receipt, HeartPulse, ArrowRight } from 'lucide-react';
+import { Video, Receipt, HeartPulse, ArrowRight } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 interface Project {
@@ -91,19 +91,6 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
               <p className={`text-${project.color} font-medium`}>{project.subtitle}</p>
             </div>
           </div>
-          <div 
-            className={`flex gap-3 transition-all duration-500 ${
-              isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4'
-            }`}
-            style={{ transitionDelay: `${index * 200 + 300}ms` }}
-          >
-            <button className="p-3 glass-card hover:bg-muted/50 rounded-xl transition-all">
-              <Github className="w-5 h-5" />
-            </button>
-            <button className="p-3 glass-card hover:bg-muted/50 rounded-xl transition-all">
-              <ExternalLink className="w-5 h-5" />
-            </button>
-          </div>
         </div>
 
         {/* Description */}
@@ -189,7 +176,12 @@ const ProjectsSection = () => {
 
           {/* CTA */}
           <div className="text-center mt-12">
-            <a href="#" className="inline-flex items-center gap-2 text-primary hover:gap-4 transition-all font-medium">
+            <a 
+              href="https://github.com/KALAIVANIMAHALATCHOUMY" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center gap-2 text-primary hover:gap-4 transition-all font-medium"
+            >
               View All Projects on GitHub
               <ArrowRight className="w-5 h-5" />
             </a>
