@@ -110,6 +110,8 @@ const ContactSection = () => {
                   <a
                     key={label}
                     href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`w-12 h-12 glass-card rounded-xl flex items-center justify-center text-muted-foreground transition-colors ${color}`}
                     aria-label={label}
                   >
