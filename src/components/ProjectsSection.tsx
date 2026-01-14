@@ -1,4 +1,4 @@
-import { Video, Receipt, HeartPulse, ArrowRight } from 'lucide-react';
+import { Video, Receipt, HeartPulse, AlertTriangle, ArrowRight } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 interface Project {
@@ -50,6 +50,18 @@ const projects: Project[] = [
     impact: 'Created a working prototype demonstrating low-cost healthcare monitoring for underserved communities.',
     techStack: ['Arduino UNO', 'IoT', 'C++', 'Serial Communication', 'Sensors'],
     color: 'accent',
+  },
+  {
+    id: 4,
+    title: 'AlertX - AI-Powered Disaster Response',
+    subtitle: 'Call for Code 2025 - 2nd Runner Up',
+    icon: AlertTriangle,
+    description: 'Multi-agent emergency response system for real-time disaster alerts, resource allocation, and community coordination.',
+    challenge: 'During disasters, delayed response and poor coordination lead to preventable casualties. Communities need faster, smarter emergency systems.',
+    solution: 'Built an AI-powered multi-agent system with real-time risk assessment, automated resource allocation, and multi-channel alerts (SMS, Push, Email).',
+    impact: 'Won 2nd Runner Up at Call for Code 2025. Designed to improve disaster preparedness and climate resilience for vulnerable communities.',
+    techStack: ['GenAI', 'Multi-Agent Systems', 'Python', 'Real-time Processing', 'SMS/Push APIs', 'Cloud Infrastructure'],
+    color: 'primary',
   },
 ];
 
