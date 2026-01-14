@@ -100,9 +100,18 @@ My work revolves around:\
 -   Emergency alert mechanism\
 -   Healthcare prototype
 
+### 4. AlertX - AI-Powered Disaster Response Platform
+
+-   Real-time disaster alerts and community coordination\
+-   AI-driven risk assessment and resource allocation\
+-   Multi-channel communication (SMS, Push, Email)\
+-   Built for Call for Code 2025 challenge\
+-   Focus on climate resilience and emergency preparedness
+
 ## Achievements
 
 -   Winner --- Infosys AI Innovation Hackathon (2025)\
+-   Call for Code 2025 --- AlertX Project Submission\
 -   Second Runner-Up --- Unisys Innovation Program Y15 (2024)\
 -   National Level Yoga Guinness World Record Holder\
 -   Multiple hackathon participations
@@ -126,6 +135,30 @@ My work revolves around:\
 -   Animations: GSAP / Framer Motion / Typewriter.js\
 -   Optional 3D: Three.js\
 -   Hosting: Vercel / Netlify / GitHub Pages
+
+## Deployment (Render)
+
+This portfolio is deployed on Render with automatic deployments from GitHub.
+
+### How Auto-Deploy Works
+
+1. **Lovable → GitHub**: When you make changes in Lovable, they automatically sync to your connected GitHub repository
+2. **GitHub → Render**: Render watches your GitHub repository and automatically rebuilds/deploys when changes are pushed
+3. **Result**: Edit in Lovable or GitHub → Site automatically updates on Render
+
+### Setup Steps for Render
+
+1. Go to [render.com](https://render.com) and create an account
+2. Click "New" → "Static Site"
+3. Connect your GitHub repository
+4. Configure build settings:
+   - **Build Command**: `npm run build`
+   - **Publish Directory**: `dist`
+5. Click "Create Static Site"
+
+### Manual Redeploy
+
+If needed, you can manually trigger a redeploy from the Render dashboard.
 
 ## Installation & Setup
 
