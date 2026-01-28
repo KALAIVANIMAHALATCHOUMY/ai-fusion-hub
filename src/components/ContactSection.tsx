@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin, Github, MapPin, Send, Download, Calendar, MessageCircle } from 'lucide-react';
+import { Mail, Phone, Linkedin, Github, MapPin, Send, Download, Calendar, MessageCircle, Award } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 interface AnimatedCardProps {
@@ -32,6 +32,7 @@ const ContactSection = () => {
     { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/kalaivani-mahalatchoumy', color: 'hover:text-blue-500' },
     { icon: Github, label: 'GitHub', href: 'https://github.com/KALAIVANIMAHALATCHOUMY', color: 'hover:text-foreground' },
     { icon: MessageCircle, label: 'WhatsApp', href: 'https://wa.me/918778012859', color: 'hover:text-green-500' },
+    { icon: Award, label: 'SkillRack', href: 'https://www.skillrack.com/faces/resume.xhtml?id=466055&key=171d311d109d27259a856b1e8adfc5d1c40d4752', color: 'hover:text-orange-500' },
   ];
 
   return (
@@ -157,6 +158,8 @@ const ContactSection = () => {
                 <a 
                   href="/resume.pdf"
                   download="Kalaivani_M_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full px-6 py-3 glass-card hover:bg-muted/50 rounded-xl font-semibold transition-all flex items-center justify-center gap-2"
                 >
                   <Download className="w-4 h-4" />
