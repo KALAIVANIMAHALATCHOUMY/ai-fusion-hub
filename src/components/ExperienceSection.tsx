@@ -126,8 +126,8 @@ const ExperienceSection = () => {
                 <AnimatedCard index={2} className="glass-card-hover rounded-2xl p-8 mt-4">
                   <div className="flex items-start justify-between mb-4">
                     <div>
-                      <h4 className="font-display text-xl font-bold">Argow</h4>
-                      <p className="text-primary font-medium">Intern</p>
+                      <h4 className="font-display text-xl font-bold">Agrowvitz (Argow)</h4>
+                      <p className="text-primary font-medium">Web Development Intern</p>
                     </div>
                     <span className="px-3 py-1 glass-card text-sm rounded-full">
                       2025
@@ -136,26 +136,26 @@ const ExperienceSection = () => {
 
                   <div className="space-y-3 mb-6">
                     <p className="text-muted-foreground">
-                      Worked on agentic AI solutions, low-code automation platforms, and web development:
+                      Contributed to Agrowvitz, a supplier of hydroponic vegetables, fruits, and nutritious produce delivering 100% chemical-free products with a focus on quality and sustainability.
                     </p>
                     <ul className="space-y-2">
                       <li className="flex items-start gap-2 text-muted-foreground">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2" />
-                        Agentic AI workflows using Zoho Creator
+                        Created and contributed to web pages for happhygreenz.com and agrowvitz.com
                       </li>
                       <li className="flex items-start gap-2 text-muted-foreground">
                         <span className="w-1.5 h-1.5 rounded-full bg-secondary mt-2" />
-                        Low-code automation with n8n platform
+                        Improved website effectiveness, usability, and user experience for real customers
                       </li>
                       <li className="flex items-start gap-2 text-muted-foreground">
                         <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2" />
-                        WordPress website development and management
+                        Gained hands-on experience building, refining, and delivering production-ready web projects
                       </li>
                     </ul>
                   </div>
 
                   <div className="flex flex-wrap gap-2">
-                    {['Zoho Creator', 'n8n', 'WordPress', 'Agentic AI', 'Low-Code Platforms'].map((tech) => (
+                    {['Web Development', 'WordPress', 'UI/UX', 'Content Management', 'Responsive Design'].map((tech) => (
                       <span key={tech} className="skill-badge text-xs">
                         {tech}
                       </span>
