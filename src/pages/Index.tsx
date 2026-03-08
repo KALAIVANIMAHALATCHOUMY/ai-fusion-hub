@@ -33,6 +33,7 @@ const Index = () => {
       <HackathonsSection />
       <EventsSection />
       <SwagSection />
+      <CertificationsSection />
       <ExperienceSection />
       <ContactSection />
       <Footer />
