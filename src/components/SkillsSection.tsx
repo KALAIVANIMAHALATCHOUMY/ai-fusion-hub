@@ -63,7 +63,18 @@ const skillGroups: SkillGroup[] = [
       { name: 'Firebase', level: 'intermediate', usedIn: 'Receipt Management' },
       { name: 'MongoDB', level: 'intermediate', usedIn: 'Video Analysis' },
       { name: 'Jira', level: 'intermediate', usedIn: 'Unisys Internship' },
-      { name: 'n8n', level: 'basic' },
+      { name: 'Google Cloud', level: 'intermediate', usedIn: 'Arcade Program' },
+    ],
+  },
+  {
+    title: 'Low-Code & CMS',
+    icon: Globe,
+    color: 'accent',
+    skills: [
+      { name: 'Zoho Creator', level: 'intermediate', usedIn: 'Argow Internship' },
+      { name: 'n8n', level: 'intermediate', usedIn: 'Argow Internship' },
+      { name: 'WordPress', level: 'intermediate', usedIn: 'Argow Internship' },
+      { name: 'UiPath', level: 'intermediate' },
     ],
   },
   {

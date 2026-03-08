@@ -122,6 +122,46 @@ const ExperienceSection = () => {
                     ))}
                   </div>
                 </AnimatedCard>
+
+                <AnimatedCard index={2} className="glass-card-hover rounded-2xl p-8 mt-4">
+                  <div className="flex items-start justify-between mb-4">
+                    <div>
+                      <h4 className="font-display text-xl font-bold">Argow</h4>
+                      <p className="text-primary font-medium">Intern</p>
+                    </div>
+                    <span className="px-3 py-1 glass-card text-sm rounded-full">
+                      2025
+                    </span>
+                  </div>
+
+                  <div className="space-y-3 mb-6">
+                    <p className="text-muted-foreground">
+                      Worked on agentic AI solutions, low-code automation platforms, and web development:
+                    </p>
+                    <ul className="space-y-2">
+                      <li className="flex items-start gap-2 text-muted-foreground">
+                        <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2" />
+                        Agentic AI workflows using Zoho Creator
+                      </li>
+                      <li className="flex items-start gap-2 text-muted-foreground">
+                        <span className="w-1.5 h-1.5 rounded-full bg-secondary mt-2" />
+                        Low-code automation with n8n platform
+                      </li>
+                      <li className="flex items-start gap-2 text-muted-foreground">
+                        <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2" />
+                        WordPress website development and management
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="flex flex-wrap gap-2">
+                    {['Zoho Creator', 'n8n', 'WordPress', 'Agentic AI', 'Low-Code Platforms'].map((tech) => (
+                      <span key={tech} className="skill-badge text-xs">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </AnimatedCard>
               </div>
 
               {/* Education */}
