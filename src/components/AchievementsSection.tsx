@@ -36,6 +36,17 @@ const achievements: Achievement[] = [
     color: 'from-orange-400 to-red-500',
     rank: '3rd Place',
   },
+  {
+    id: 3,
+    title: '2nd Runner-up',
+    event: 'Call for Code 2025 — AlertX',
+    year: '2025',
+    description: 'Built AlertX, an AI-Powered Multi-Agent Emergency Response System using IBM watsonx.ai and watsonx Orchestrate, reducing detection-to-action time from minutes to seconds.',
+    tech: ['IBM watsonx.ai', 'Multi-Agent AI', 'Granite Vision', 'LLM Reasoning'],
+    icon: Award,
+    color: 'from-emerald-400 to-teal-500',
+    rank: '2nd Runner-up',
+  },
 ];
 
 const AchievementCard = ({ achievement, index }: { achievement: Achievement; index: number }) => {
@@ -101,7 +112,7 @@ const AchievementsSection = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {achievements.map((achievement, index) => (
               <AchievementCard key={achievement.id} achievement={achievement} index={index} />
             ))}
