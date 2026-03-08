@@ -187,7 +187,36 @@ const CertificationCard = ({ cert, index }: { cert: Certification; index: number
           )}
         </div>
       </div>
-    </Wrapper>
+    </div>
+  );
+
+  const className = `glass-card-hover p-5 rounded-2xl transition-all duration-700 ease-out group block ${
+    cert.link ? 'cursor-pointer' : ''
+  } ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`;
+
+  if (cert.link) {
+    return (
+      <a
+        ref={ref as React.Ref<HTMLAnchorElement>}
+        href={cert.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={className}
+        style={{ transitionDelay: `${(index % 6) * 80}ms` }}
+      >
+        {cardContent}
+      </a>
+    );
+  }
+
+  return (
+    <div
+      ref={ref}
+      className={className}
+      style={{ transitionDelay: `${(index % 6) * 80}ms` }}
+    >
+      {cardContent}
+    </div>
   );
 };
 
