@@ -86,6 +86,7 @@ const certifications: Certification[] = [
     issued: 'Dec 2024',
     skills: ['AI', 'Machine Learning'],
     link: 'https://www.credly.com/badges/419c6a82-1caa-4442-b000-40ea43dc8503/linked_in_profile',
+    certificateImage: '/certificates/gemini-multimodal-rag.png',
   },
   {
     title: 'Prompt Design in Vertex AI Skill Badge',
