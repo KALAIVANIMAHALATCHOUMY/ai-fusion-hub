@@ -46,6 +46,7 @@ const certifications: Certification[] = [
     issued: 'Sep 2024',
     expired: 'Feb 2025',
     skills: ['Python', 'Agentic', 'AI Agents', 'Flask', 'Front-End Development', 'Back-End Web Development', 'RAG'],
+    certificateImage: '/certificates/unisys-innovation.png',
   },
   {
     title: 'Google Developer Experts',
