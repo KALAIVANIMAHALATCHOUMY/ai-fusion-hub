@@ -70,6 +70,7 @@ const certifications: Certification[] = [
     issuer: 'Oracle',
     issued: 'Mar 2025',
     link: 'https://brm-certview.oracle.com/ords/certview/ecertificate?ssn=OC5736070&trackId=OMBPHCMCFA1&key=6cf9a96839522cc1c9e3f60965d99831e0f169c1',
+    certificateImage: '/certificates/oracle-fusion-cloud.png',
   },
   {
     title: 'UiPath Academy Automation Explorer Training',
