@@ -94,6 +94,7 @@ const certifications: Certification[] = [
     issued: 'Sep 2024',
     skills: ['AI', 'Machine Learning'],
     link: 'https://www.credly.com/badges/bbd2550d-707f-4cad-b643-000043cb6d7d/linked_in_profile',
+    certificateImage: '/certificates/prompt-design-vertex-ai.png',
   },
   {
     title: 'Develop GenAI Apps with Gemini and Streamlit Skill Badge',
