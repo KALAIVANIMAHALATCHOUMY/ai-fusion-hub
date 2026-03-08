@@ -1,4 +1,5 @@
 import { ArrowUp } from 'lucide-react';
+import kalaiPhoto from '@/assets/kalaivani.jpg';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -9,8 +10,10 @@ const Footer = () => {
     <footer className="py-12 border-t border-border/50 relative">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-2 text-muted-foreground">
-            <span>Built by Kalaivani M</span>
+          <div className="flex items-center gap-3 text-muted-foreground">
+            <span>Built by</span>
+            <img src={kalaiPhoto} alt="Kalaivani M" className="w-7 h-7 rounded-full object-cover" />
+            <span>Kalaivani M</span>
           </div>
 
           <div className="flex items-center gap-6">
