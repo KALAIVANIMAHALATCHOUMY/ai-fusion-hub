@@ -32,6 +32,7 @@ const certifications: Certification[] = [
     title: 'Walmart Sparkathon Converge',
     issuer: 'Walmart Global Tech India',
     skills: ['Ideas Development', 'Pitching Ideas'],
+    certificateImage: '/certificates/walmart-sparkathon.png',
   },
   {
     title: 'Hacksagon',
