@@ -38,6 +38,7 @@ const certifications: Certification[] = [
     title: 'Hacksagon',
     issuer: 'ABV-IIITM',
     skills: ['Embedded Systems'],
+    certificateImage: '/certificates/hacksagon.png',
   },
   {
     title: 'Unisys Innovation Program Year 16',
