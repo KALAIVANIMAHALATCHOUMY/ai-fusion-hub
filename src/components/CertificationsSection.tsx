@@ -26,6 +26,7 @@ const certifications: Certification[] = [
     issuer: 'Google Developer Student Clubs',
     credentialId: '2025H2S01GSC-P19439',
     skills: ['Cloud Firestore', 'Google Analytics', 'GCP', 'AI Agents'],
+    certificateImage: '/certificates/agentic-ai-hackathon.png',
   },
   {
     title: 'Walmart Sparkathon Converge',
