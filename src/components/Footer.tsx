@@ -1,4 +1,4 @@
-import { Heart, ArrowUp } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -10,9 +10,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2 text-muted-foreground">
-            <span>Built with</span>
-            <Heart className="w-4 h-4 text-destructive fill-destructive" />
-            <span>by Kalaivani M</span>
+            <span>Built by Kalaivani M</span>
           </div>
 
           <div className="flex items-center gap-6">
