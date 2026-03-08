@@ -83,8 +83,12 @@ const skillGroups: SkillGroup[] = [
     color: 'neon-purple',
     skills: [
       { name: 'Arduino UNO', level: 'advanced', usedIn: 'Health Monitoring' },
+      { name: 'ESP32', level: 'intermediate' },
       { name: 'Raspberry Pi', level: 'intermediate' },
       { name: 'IoT Systems', level: 'advanced', usedIn: 'Health Monitoring' },
+      { name: 'Microcontrollers', level: 'intermediate' },
+      { name: 'Schematics', level: 'intermediate' },
+      { name: 'AutoCAD', level: 'intermediate' },
     ],
   },
   {
