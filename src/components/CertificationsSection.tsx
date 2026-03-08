@@ -62,6 +62,7 @@ const certifications: Certification[] = [
     title: 'Oracle Fusion Cloud Application HCM Certified Foundation Associate',
     issuer: 'Oracle',
     issued: 'Mar 2025',
+    link: 'https://brm-certview.oracle.com/ords/certview/ecertificate?ssn=OC5736070&trackId=OMBPHCMCFA1&key=6cf9a96839522cc1c9e3f60965d99831e0f169c1',
   },
   {
     title: 'UiPath Academy Automation Explorer Training',
@@ -69,18 +70,21 @@ const certifications: Certification[] = [
     issued: 'May 2024',
     expired: 'May 2026',
     credentialId: '123325650',
+    link: 'https://credentials.uipath.com/f9bef52a-7345-4237-8c8e-ee3ab3cf1fde',
   },
   {
     title: 'Inspect Rich Documents with Gemini Multimodality and Multimodal RAG',
     issuer: 'Google',
     issued: 'Dec 2024',
     skills: ['AI', 'Machine Learning'],
+    link: 'https://www.credly.com/badges/419c6a82-1caa-4442-b000-40ea43dc8503/linked_in_profile',
   },
   {
     title: 'Prompt Design in Vertex AI Skill Badge',
     issuer: 'Google',
     issued: 'Sep 2024',
     skills: ['AI', 'Machine Learning'],
+    link: 'https://www.credly.com/badges/bbd2550d-707f-4cad-b643-000043cb6d7d/linked_in_profile',
   },
   {
     title: 'Develop GenAI Apps with Gemini and Streamlit Skill Badge',
