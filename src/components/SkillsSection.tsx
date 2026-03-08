@@ -94,7 +94,6 @@ const skillGroups: SkillGroup[] = [
     skills: [
       { name: 'LangChain', level: 'advanced', usedIn: 'Receipt Management' },
       { name: 'Google ADK', level: 'advanced', usedIn: 'Hackathon Project' },
-      { name: 'UiPath', level: 'intermediate' },
       { name: 'AI Automation', level: 'advanced' },
     ],
   },
