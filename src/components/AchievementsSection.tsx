@@ -112,7 +112,7 @@ const AchievementsSection = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {achievements.map((achievement, index) => (
               <AchievementCard key={achievement.id} achievement={achievement} index={index} />
             ))}
