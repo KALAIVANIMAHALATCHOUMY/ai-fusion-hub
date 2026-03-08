@@ -10,6 +10,7 @@ interface Certification {
   credentialId?: string;
   skills?: string[];
   link?: string;
+  certificateImage?: string;
 }
 
 const certifications: Certification[] = [
@@ -18,22 +19,26 @@ const certifications: Certification[] = [
     issuer: 'Google Cloud Security',
     credentialId: '2024H2S10AFI-P002031',
     skills: ['AI Agents'],
+    certificateImage: '/certificates/ai-for-impact.png',
   },
   {
     title: 'Agentic AI Hackathon',
     issuer: 'Google Developer Student Clubs',
     credentialId: '2025H2S01GSC-P19439',
     skills: ['Cloud Firestore', 'Google Analytics', 'GCP', 'AI Agents'],
+    certificateImage: '/certificates/agentic-ai-hackathon.png',
   },
   {
     title: 'Walmart Sparkathon Converge',
     issuer: 'Walmart Global Tech India',
     skills: ['Ideas Development', 'Pitching Ideas'],
+    certificateImage: '/certificates/walmart-sparkathon.png',
   },
   {
     title: 'Hacksagon',
     issuer: 'ABV-IIITM',
     skills: ['Embedded Systems'],
+    certificateImage: '/certificates/hacksagon.png',
   },
   {
     title: 'Unisys Innovation Program Year 16',
@@ -41,6 +46,7 @@ const certifications: Certification[] = [
     issued: 'Sep 2024',
     expired: 'Feb 2025',
     skills: ['Python', 'Agentic', 'AI Agents', 'Flask', 'Front-End Development', 'Back-End Web Development', 'RAG'],
+    certificateImage: '/certificates/unisys-innovation.png',
   },
   {
     title: 'Google Developer Experts',
@@ -57,12 +63,14 @@ const certifications: Certification[] = [
     title: 'Microsoft Student Ambassadors – Imagine Cup',
     issuer: 'Microsoft',
     issued: 'Mar 2025',
+    certificateImage: '/certificates/microsoft-student-ambassadors.png',
   },
   {
     title: 'Oracle Fusion Cloud Application HCM Certified Foundation Associate',
     issuer: 'Oracle',
     issued: 'Mar 2025',
     link: 'https://brm-certview.oracle.com/ords/certview/ecertificate?ssn=OC5736070&trackId=OMBPHCMCFA1&key=6cf9a96839522cc1c9e3f60965d99831e0f169c1',
+    certificateImage: '/certificates/oracle-fusion-cloud.png',
   },
   {
     title: 'UiPath Academy Automation Explorer Training',
@@ -78,6 +86,7 @@ const certifications: Certification[] = [
     issued: 'Dec 2024',
     skills: ['AI', 'Machine Learning'],
     link: 'https://www.credly.com/badges/419c6a82-1caa-4442-b000-40ea43dc8503/linked_in_profile',
+    certificateImage: '/certificates/gemini-multimodal-rag.png',
   },
   {
     title: 'Prompt Design in Vertex AI Skill Badge',
@@ -85,6 +94,7 @@ const certifications: Certification[] = [
     issued: 'Sep 2024',
     skills: ['AI', 'Machine Learning'],
     link: 'https://www.credly.com/badges/bbd2550d-707f-4cad-b643-000043cb6d7d/linked_in_profile',
+    certificateImage: '/certificates/prompt-design-vertex-ai.png',
   },
   {
     title: 'Develop GenAI Apps with Gemini and Streamlit Skill Badge',
@@ -139,6 +149,7 @@ const certifications: Certification[] = [
 const INITIAL_SHOW = 6;
 
 const getCertificateLink = (cert: Certification) => {
+  if (cert.certificateImage) return cert.certificateImage;
   if (cert.link) return cert.link;
   const query = encodeURIComponent(`${cert.title} ${cert.issuer} credential`);
   return `https://www.google.com/search?q=${query}`;
