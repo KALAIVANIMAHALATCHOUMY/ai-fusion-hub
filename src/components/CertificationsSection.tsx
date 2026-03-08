@@ -63,6 +63,7 @@ const certifications: Certification[] = [
     title: 'Microsoft Student Ambassadors – Imagine Cup',
     issuer: 'Microsoft',
     issued: 'Mar 2025',
+    certificateImage: '/certificates/microsoft-student-ambassadors.png',
   },
   {
     title: 'Oracle Fusion Cloud Application HCM Certified Foundation Associate',
