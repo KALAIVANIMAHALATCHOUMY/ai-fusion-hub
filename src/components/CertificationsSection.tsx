@@ -149,6 +149,7 @@ const certifications: Certification[] = [
 const INITIAL_SHOW = 6;
 
 const getCertificateLink = (cert: Certification) => {
+  if (cert.certificateImage) return cert.certificateImage;
   if (cert.link) return cert.link;
   const query = encodeURIComponent(`${cert.title} ${cert.issuer} credential`);
   return `https://www.google.com/search?q=${query}`;
