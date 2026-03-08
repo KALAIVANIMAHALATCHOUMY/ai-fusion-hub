@@ -277,10 +277,10 @@ const HeroSection = () => {
             }`}
           >
             {[
-              { value: '3+', label: 'AI Projects', color: 'primary' },
+              { value: '4+', label: 'AI Projects', color: 'primary' },
               { value: '2', label: 'Hackathon Wins', color: 'neon-purple' },
-              { value: '3', label: 'Certifications', color: 'neon-teal' },
-              { value: '1', label: 'Internship', color: 'neon-cyan' },
+              { value: '20+', label: 'Certifications', color: 'neon-teal' },
+              { value: '2', label: 'Internship', color: 'neon-cyan' },
             ].map((stat, index) => (
               <div 
                 key={stat.label} 
