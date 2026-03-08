@@ -188,7 +188,7 @@ const CertificationCard = ({ cert, index }: { cert: Certification; index: number
           )}
         </div>
       </div>
-    </div>
+    </Wrapper>
   );
 };
 
