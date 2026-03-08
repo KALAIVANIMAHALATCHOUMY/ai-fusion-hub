@@ -10,6 +10,7 @@ interface Certification {
   credentialId?: string;
   skills?: string[];
   link?: string;
+  certificateImage?: string;
 }
 
 const certifications: Certification[] = [
