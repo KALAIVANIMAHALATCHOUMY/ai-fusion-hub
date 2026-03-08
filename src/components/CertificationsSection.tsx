@@ -135,12 +135,18 @@ const INITIAL_SHOW = 6;
 const CertificationCard = ({ cert, index }: { cert: Certification; index: number }) => {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
 
+  const Wrapper = cert.link ? 'a' : 'div';
+  const wrapperProps = cert.link
+    ? { href: cert.link, target: '_blank' as const, rel: 'noopener noreferrer' }
+    : {};
+
   return (
-    <div
+    <Wrapper
       ref={ref}
-      className={`glass-card-hover p-5 rounded-2xl transition-all duration-700 ease-out group ${
-        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-      }`}
+      {...wrapperProps}
+      className={`glass-card-hover p-5 rounded-2xl transition-all duration-700 ease-out group block ${
+        cert.link ? 'cursor-pointer' : ''
+      } ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
       style={{ transitionDelay: `${(index % 6) * 80}ms` }}
     >
       <div className="flex items-start gap-4">
@@ -148,9 +154,14 @@ const CertificationCard = ({ cert, index }: { cert: Certification; index: number
           <Award className="w-5 h-5 text-primary" />
         </div>
         <div className="min-w-0 flex-1">
-          <h3 className="font-display font-semibold text-sm leading-tight mb-1 group-hover:text-primary transition-colors">
-            {cert.title}
-          </h3>
+          <div className="flex items-center gap-2">
+            <h3 className="font-display font-semibold text-sm leading-tight mb-1 group-hover:text-primary transition-colors">
+              {cert.title}
+            </h3>
+            {cert.link && (
+              <ExternalLink className="w-3.5 h-3.5 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
+            )}
+          </div>
           <p className="text-xs text-muted-foreground mb-1">{cert.issuer}</p>
           {(cert.issued || cert.credentialId) && (
             <div className="text-xs text-muted-foreground/70 space-y-0.5">
