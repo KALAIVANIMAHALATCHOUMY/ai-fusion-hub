@@ -19,6 +19,7 @@ const certifications: Certification[] = [
     issuer: 'Google Cloud Security',
     credentialId: '2024H2S10AFI-P002031',
     skills: ['AI Agents'],
+    certificateImage: '/certificates/ai-for-impact.png',
   },
   {
     title: 'Agentic AI Hackathon',
