@@ -9,6 +9,7 @@ interface Certification {
   expired?: string;
   credentialId?: string;
   skills?: string[];
+  link?: string;
 }
 
 const certifications: Certification[] = [
