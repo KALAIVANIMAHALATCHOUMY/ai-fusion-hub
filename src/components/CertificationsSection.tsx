@@ -45,11 +45,13 @@ const certifications: Certification[] = [
   {
     title: 'Google Developer Experts',
     issuer: 'Google',
+    link: 'https://g.dev/Kalaivani',
   },
   {
     title: 'Skill Rack',
     issuer: 'skillrack.com',
     skills: ['Python', 'C', 'C++'],
+    link: 'https://www.skillrack.com/faces/resume.xhtml?id=466055&key=171d311d109d27259a856b1e8adfc5d1c40d4752',
   },
   {
     title: 'Microsoft Student Ambassadors – Imagine Cup',
