@@ -8,6 +8,7 @@ import AchievementsSection from '@/components/AchievementsSection';
 import HackathonsSection from '@/components/HackathonsSection';
 import EventsSection from '@/components/EventsSection';
 import SwagSection from '@/components/SwagSection';
+import CertificationsSection from '@/components/CertificationsSection';
 import ExperienceSection from '@/components/ExperienceSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
