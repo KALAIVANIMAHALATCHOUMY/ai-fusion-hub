@@ -197,7 +197,7 @@ const CertificationCard = ({ cert, index }: { cert: Certification; index: number
   if (cert.link) {
     return (
       <a
-        ref={ref as React.Ref<HTMLAnchorElement>}
+        ref={ref as unknown as React.Ref<HTMLAnchorElement>}
         href={cert.link}
         target="_blank"
         rel="noopener noreferrer"
